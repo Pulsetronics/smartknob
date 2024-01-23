@@ -5,30 +5,6 @@
 
 #include "font/roboto_light_60.h"
 
-// Default color definitions
-#define lv_color_navy()         lv_color_make(0,   0,   128) 
-#define lv_color_darkGreen()    lv_color_make(0,   128, 0) 
-#define lv_color_darkCyan()     lv_color_make(0,   128, 128)
-#define lv_color_maroon()       lv_color_make(128, 0,   0) 
-#define lv_color_purple()       lv_color_make(128, 0,   128)     
-#define lv_color_olive()        lv_color_make(128, 128, 0)     
-#define lv_color_lightGrey()    lv_color_make(211, 211, 211) 
-#define lv_color_darkGrey()     lv_color_make(128, 128, 128)  
-#define lv_color_blue()         lv_color_make(0,   0,   255) 
-#define lv_color_green()        lv_color_make(0,   255, 0) 
-#define lv_color_cyan()         lv_color_make(0,   255, 255) 
-#define lv_color_red()          lv_color_make(255, 0,   0) 
-#define lv_color_magenta()      lv_color_make(255, 0,   255) 
-#define lv_color_yellow()       lv_color_make(255, 255, 0) 
-#define lv_color_orange()       lv_color_make(255, 180, 0) 
-#define lv_color_greenYellow()  lv_color_make(180, 255, 0)
-#define lv_color_pink()         lv_color_make(255, 192, 203)  
-#define lv_color_brown()        lv_color_make(150, 75,  0) 
-#define lv_color_gold()         lv_color_make(255, 215, 0) 
-#define lv_color_silver()       lv_color_make(192, 192, 192) 
-#define lv_color_skyBlue()      lv_color_make(135, 206, 235) 
-// #define TFT_VIOLET      0x915C 
-
 
 static lv_disp_draw_buf_t draw_buf;
 static lv_color_t buf[LV_VER_RES_MAX * LV_HOR_RES_MAX / 10 ];
