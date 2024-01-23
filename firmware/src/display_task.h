@@ -3,6 +3,7 @@
 #if SK_DISPLAY
 
 #include <Arduino.h>
+#include <lvgl.h>
 #include <TFT_eSPI.h>
 
 #include "logger.h"
@@ -21,14 +22,14 @@ class DisplayTask : public Task<DisplayTask> {
         void setBrightness(uint16_t brightness);
         void setLogger(Logger* logger);
 
-    protected:
+     protected:
         void run();
 
     private:
-        TFT_eSPI tft_ = TFT_eSPI();
+       // TFT_eSPI tft_ = TFT_eSPI();
 
-        /** Full-size sprite used as a framebuffer */
-        TFT_eSprite spr_ = TFT_eSprite(&tft_);
+       /** Full-size sprite used as a framebuffer */
+       // TFT_eSprite spr_ = TFT_eSprite(&tft_);
 
         QueueHandle_t knob_state_queue_;
 

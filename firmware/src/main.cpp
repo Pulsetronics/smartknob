@@ -13,10 +13,10 @@ static DisplayTask* display_task_p = &display_task;
 #else
 static DisplayTask* display_task_p = nullptr;
 #endif
-static MotorTask motor_task(1, config);
+   static MotorTask motor_task(1, config);
 
 
-InterfaceTask interface_task(0, motor_task, display_task_p);
+   InterfaceTask interface_task(0, motor_task, display_task_p);
 
 void setup() {
   #if SK_DISPLAY
