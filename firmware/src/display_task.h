@@ -6,12 +6,6 @@
 #include <lvgl.h>
 #include <TFT_eSPI.h>
 
-#include "logger.h"
-#include "proto_gen/smartknob.pb.h"
-#include "task.h"
-
-
-
 // Default color definitions
 #define lv_color_navy()         lv_color_make(0,   0,   128) 
 #define lv_color_darkGreen()    lv_color_make(0,   128, 0) 
@@ -35,6 +29,10 @@
 #define lv_color_silver()       lv_color_make(192, 192, 192) 
 #define lv_color_skyBlue()      lv_color_make(135, 206, 235) 
 // #define TFT_VIOLET      0x915C 
+
+#include "logger.h"
+#include "proto_gen/smartknob.pb.h"
+#include "task.h"
 
 class DisplayTask : public Task<DisplayTask> {
     friend class Task<DisplayTask>; // Allow base Task to invoke protected run()

@@ -5,7 +5,6 @@
 
 #include "font/roboto_light_60.h"
 
-
 static lv_disp_draw_buf_t draw_buf;
 static lv_color_t buf[LV_VER_RES_MAX * LV_HOR_RES_MAX / 10 ];
 TFT_eSPI tft_ = TFT_eSPI(LV_HOR_RES_MAX, LV_VER_RES_MAX);
